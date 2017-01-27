@@ -12,6 +12,7 @@
 		B41315801E3B7F0100215847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B413157F1E3B7F0100215847 /* Assets.xcassets */; };
 		B41315831E3B7F0100215847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41315811E3B7F0100215847 /* LaunchScreen.storyboard */; };
 		B413158C1E3B7F9F00215847 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413158B1E3B7F9F00215847 /* ImageViewController.swift */; };
+		B413158E1E3BA0A100215847 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413158D1E3BA0A100215847 /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B41315821E3B7F0100215847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B41315841E3B7F0100215847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B413158B1E3B7F9F00215847 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		B413158D1E3BA0A100215847 /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				B413157C1E3B7F0100215847 /* Main.storyboard */,
+				B413158D1E3BA0A100215847 /* CassiniViewController.swift */,
 				B413158B1E3B7F9F00215847 /* ImageViewController.swift */,
 				B41315841E3B7F0100215847 /* Info.plist */,
 				B413158A1E3B7F2B00215847 /* Supporting Files */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B413158C1E3B7F9F00215847 /* ImageViewController.swift in Sources */,
+				B413158E1E3BA0A100215847 /* CassiniViewController.swift in Sources */,
 				B41315791E3B7F0100215847 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
