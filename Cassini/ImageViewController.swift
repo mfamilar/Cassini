@@ -25,11 +25,13 @@ class ImageViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var scrollView: UIScrollView! {
-        didSet {
-            scrollView.contentSize = imageView.frame.size
-        }
-    }
+//    @IBOutlet weak var scrollView: UIScrollView! {
+//        didSet {
+//            scrollView.contentSize = imageView.frame.size
+//        }
+//    }
+    
+    private var scrollView = UIScrollView()
     
     private var imageView = UIImageView()
     
@@ -40,13 +42,14 @@ class ImageViewController: UIViewController {
         set {
             imageView.image = newValue
             imageView.sizeToFit()
-            scrollView?.contentSize = imageView.frame.size
+            scrollView.contentSize = imageView.frame.size
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.addSubview(imageView)
+        self.view = self.scrollView
         imageURL = NSURL(string: "http://boingboing.net/features/cassini/cassini6.jpg")
     }
 }
