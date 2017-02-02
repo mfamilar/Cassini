@@ -24,9 +24,8 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
             spinner?.startAnimating()
             DispatchQueue.global(qos: .userInitiated).async {
                 let contentsOfURL = NSData(contentsOf: url as URL)
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [weak weakSelf = self] in
                     if url == self.imageURL {
-                        weak var weakSelf = self
                         if let imageData = contentsOfURL {
                             weakSelf?.image = UIImage(data: imageData as Data)
                         } else {
